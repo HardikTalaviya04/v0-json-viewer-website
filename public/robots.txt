@@ -11,7 +11,7 @@ Disallow: /_next/
 Disallow: /api/internal/
 
 # Sitemap location
-Sitemap: https://formatjsondata.vercel.app/sitemap.xml
+Sitemap: https://jsonviewer.shop/sitemap.xml
 
 # Crawl delay (1 second for respectful crawling)
 Crawl-delay: 1

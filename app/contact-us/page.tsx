@@ -40,7 +40,7 @@ export default function ContactUs() {
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
                     <a href="mailto:support@jsonviewer.app" className="text-primary hover:underline text-sm">
-                      support@jsonviewer.app
+                      support@jsonviewer.shop
                     </a>
                   </div>
                 </div>
