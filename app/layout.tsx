@@ -120,10 +120,10 @@ export default function RootLayout({
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
-        <link rel="icon" href="/favicoon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" sizes="32x32" />
-        <link rel="shortcut icon" href="/favicoon.svg" />
-        <link rel="apple-touch-icon" href="/favicoon.svg" />
+        <link rel="icon" href="/favicoon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="mask-icon" href="/favicoon.svg" color="#0f172a" />
 
         <script
