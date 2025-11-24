@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     url: "https://jsonviewer.shop",
     siteName: "Format JSON Data",
 
-    images: [
-      {
-        url: "/favicon.png",
-        width: 1200,
-        height: 630,
-        alt: "JSON Viewer & Formatter",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "/favicon.png",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "JSON Viewer & Formatter",
+    //   },
+    // ],
     locale: "en_US",
     type: "website",
   },
@@ -76,11 +76,10 @@ export const metadata: Metadata = {
   generator: 'hardik-talaviya/jsonviewer.shop v1.0.0',
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/download.png", sizes: "32x32", type: "image/png" },
+      { url: "/download.png", sizes: "16x16", type: "image/png" }
     ],
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    apple: "/download.png"
   },
 }
 
@@ -120,11 +119,11 @@ export default function RootLayout({
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
-        <link rel="icon" href="/favicon.png" sizes="32x32" />
-        <link rel="icon" href="/favicoon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-        <link rel="mask-icon" href="/favicoon.svg" color="#0f172a" />
+        {/* <link rel="icon" href="/favicon.png" sizes="32x32" /> */}
+        {/* <link rel="icon" href="/favicon.png" type="image/png" /> */}
+        {/* <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" /> */}
+        {/* <link rel="mask-icon" href="/favicon.png" color="#0f172a" /> */}
 
         <script
           type="application/ld+json"
