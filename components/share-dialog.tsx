@@ -31,7 +31,7 @@ export function ShareDialog({ open, onOpenChange, jsonContent }: ShareDialogProp
       // In a real implementation, this would call your backend API
       const encoded = btoa(encodeURIComponent(jsonContent))
       const shortId = Math.random().toString(36).substring(2, 8)
-      const url = `${window.location.origin}/shared/${shortId}`
+      const url = `https://jsonviewer.shop/`
 
       setShareUrl(url)
 
