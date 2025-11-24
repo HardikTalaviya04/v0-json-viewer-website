@@ -21,22 +21,23 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://formatjsondata.vercel.app"),
+  metadataBase: new URL("https://jsonviewer.shop"),
   alternates: {
-    canonical: "https://formatjsondata.vercel.app",
+    canonical: "https://jsonviewer.shop",
   },
   openGraph: {
     title: "JSON Viewer & Formatter - Free Professional Online Editor",
     description:
       "Format, validate, and analyze JSON data with advanced features like diff comparison, table view, and AI analysis. Handle large JSON files instantly.",
-    url: "https://formatjsondata.vercel.app",
+    url: "https://jsonviewer.shop",
     siteName: "Format JSON Data",
+
     images: [
       {
-        url: "https://formatjsondata.vercel.app/og-image.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
-        alt: "Format JSON Data - Professional JSON Editor Interface",
+        alt: "JSON Viewer & Formatter",
       },
     ],
     locale: "en_US",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     title: "JSON Viewer & Formatter - Free Professional Online Editor",
     description:
       "Format, validate, and analyze JSON data with advanced features including diff comparison and AI analysis.",
-    images: ["https://formatjsondata.vercel.app/og-image.png"],
+    images: ["https://jsonviewer.shop/og-image.png"],
     creator: "@formatjsondata",
   },
   robots: {
@@ -72,7 +73,15 @@ export const metadata: Metadata = {
     maximumScale: 5,
     userScalable: true,
   },
-    generator: 'v0.app'
+  generator: 'hardik-talaviya/jsonviewer.shop v1.0.0',
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
@@ -105,12 +114,17 @@ export default function RootLayout({
           property="og:description"
           content="Format, validate, and analyze JSON data with advanced features like diff comparison and table view."
         />
-        <meta property="og:url" content="https://formatjsondata.vercel.app" />
+        <meta property="og:url" content="https://jsonviewer.shop" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://formatjsondata.vercel.app/og-image.png" />
+        <meta property="og:image" content="https://jsonviewer.shop/og-image.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="icon" href="/favicoon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.png" sizes="32x32" />
+        <link rel="shortcut icon" href="/favicoon.svg" />
+        <link rel="apple-touch-icon" href="/favicoon.svg" />
+        <link rel="mask-icon" href="/favicoon.svg" color="#0f172a" />
 
         <script
           type="application/ld+json"
@@ -121,7 +135,7 @@ export default function RootLayout({
               name: "JSON Viewer & Formatter",
               description:
                 "Professional online JSON editor, formatter, and viewer with advanced features including syntax highlighting, diff comparison, table export, and AI analysis.",
-              url: "https://formatjsondata.vercel.app",
+              url: "https://jsonviewer.shop",
               applicationCategory: "DeveloperApplication",
               operatingSystem: "Web Browser",
               browserRequirements: "Requires JavaScript and modern browser",
@@ -158,8 +172,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Format JSON Data",
-              url: "https://formatjsondata.vercel.app",
-              logo: "https://formatjsondata.vercel.app/logo.png",
+              url: "https://jsonviewer.shop",
+              logo: "https://jsonviewer.shop/logo.png",
               description: "Professional JSON formatter and editor",
               sameAs: ["https://twitter.com/formatjsondata", "https://github.com/formatjsondata"],
             }),
