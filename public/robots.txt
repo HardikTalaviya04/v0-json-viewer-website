@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Allow: /contact-us
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Allow: /disclaimer
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/internal/
+
+# Sitemap location
+Sitemap: https://formatjsondata.vercel.app/sitemap.xml
+
+# Crawl delay (1 second for respectful crawling)
+Crawl-delay: 1
+
+# User-agent specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# User-agent specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
