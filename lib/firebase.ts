@@ -3,25 +3,17 @@ import { initializeApp, getApps } from "firebase/app"
 import { getAnalytics, logEvent, type Analytics } from "firebase/analytics"
 
 // Check if all required Firebase environment variables are present
-const hasFirebaseConfig = !!(
-  process.env.NEXT_PUBLIC_FIREBASE_API_KEY &&
-  process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN &&
-  process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID &&
-  process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET &&
-  process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID &&
-  process.env.NEXT_PUBLIC_FIREBASE_APP_ID &&
-  process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
-)
+const hasFirebaseConfig = true;
 
 const firebaseConfig = hasFirebaseConfig
   ? {
-      apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-      authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-      projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-      storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-      messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-      appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-      measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+      apiKey: "AIzaSyDQspYetOD_lmkqYvwfBNDUI2pU2HEXOgI",
+  authDomain: "json-formatter-1.firebaseapp.com",
+  projectId: "json-formatter-1",
+  storageBucket: "json-formatter-1.firebasestorage.app",
+  messagingSenderId: "510807153450",
+  appId: "1:510807153450:web:182bb1db94b1028ce21c53",
+  measurementId: "G-JZKT18SD9M"
     }
   : null
 
